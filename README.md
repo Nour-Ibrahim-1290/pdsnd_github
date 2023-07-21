@@ -6,7 +6,6 @@ bikeshare.py
 README.md
 
 ### Exploring Bikeshare System
-Replace the Project Title
 
 ### Description
 Using Bikeshare system data, I've build an inquiry system that could give out information and some primilary analysis on the data using Python.
