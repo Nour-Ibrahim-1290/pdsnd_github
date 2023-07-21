@@ -16,7 +16,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
 MONTHS = ['january', 'february', 'march', 'april', 'may', 'june']
 DAYS = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
 
-def get_filters():#Done!!
+def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
 
@@ -27,6 +27,7 @@ def get_filters():#Done!!
     """
     
     print('\n\nHello! Let\'s explore some US bikeshare data!\n')
+    
     try:
         # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
         while True:
@@ -93,7 +94,7 @@ def get_filters():#Done!!
     return city, month, day
 
 
-def load_data(city, month, day):#Done!!
+def load_data(city, month, day):
     """
     Loads data for the specified city and filters by month and day if applicable.
 
@@ -131,7 +132,7 @@ def load_data(city, month, day):#Done!!
     return df
 
 
-def time_stats(df):#Done!!
+def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
     print('After filtering the data,\n\nWe\'re Examining a Total of {} rows of data,\n\nLet\'s see what we have on it.....\n\n'.format(
         df.count()[0]))
@@ -165,7 +166,7 @@ def time_stats(df):#Done!!
     print('')
 
 
-def station_stats(df):#Done!!
+def station_stats(df):
     """Displays statistics on the most popular stations and trip."""
 
     print('\nCalculating The Statistics of Stations and Trip...\n\n')
@@ -188,7 +189,7 @@ def station_stats(df):#Done!!
     print('')
 
 
-def trip_duration_stats(df):#Done!!
+def trip_duration_stats(df):
     """Displays statistics on the total and average trip duration."""
 
     print('\nCalculating Trip Duration Statistics...\n')
@@ -209,7 +210,7 @@ def trip_duration_stats(df):#Done!!
     print('')
 
 
-def user_stats(df):#Done!!
+def user_stats(df):
     """Displays statistics on bikeshare users."""
 
     print('\nCalculating User Statistics...\n')
