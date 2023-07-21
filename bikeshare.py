@@ -3,9 +3,13 @@ import pandas as pd
 import numpy as np
 from zipfile import Zipfile
 
+
 file_name = 'bikeshare-datasets.zip'
-with Zipfile(file_name, 'r) as zip:
+
+with Zipfile(file_name, 'r') as zip:
 	zip.extractall()
+
+# defining necessary global variable
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york': 'new_york_city.csv',
               'washington': 'washington.csv' }
